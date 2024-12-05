@@ -20,7 +20,7 @@ a:hover {
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff4e5c);
+    background: linear-gradient(90deg, #938e90, #1f1e1e, #242122);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -56,7 +56,7 @@ header nav a {
 
 header nav a:hover {
     background: white;
-    color: #ff4e5c;
+    color: #1c1919;
 }
 
 /* Containers */

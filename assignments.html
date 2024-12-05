@@ -3,62 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments- Data Science 2024</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Assignments - My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resources.html">Programming assignment yt links</a>
-            <a href="internalsol.html">Internal Solutions</a>
-            <a href="endsem.html">Endsem Solution</a>
-        </nav>
-    </header>
 
-    <main class="container">
-        <section>
-            <h2>Programming Assignments of Data Science</h2>
-            <ul>
-                <li>Lecture 1: Basics of Python</li>
-                <li>Lecture 2: Data Preparation</li>
-                <li>Lecture 3: Exploratory Data Analysis</li>
-                <li>Lecture 4: Data Preparation phase to Model the Data</li>
-                <li>Lecture 5: Model Evaluation</li>
-                <li>Lecture 6: Naive Bayes Classification</li>
-                <li>Lecture 7: Neural Networks</li>
-                <li>Lecture 8: Clustering</li>
-                <li>Lecture 9: Regression Modelling</li>
-                <li>Lecture 10: Dimension Reduction</li>
-                <li>Lecture 11: Logistic and Poisson Regression</li>
-                <li>Lecture 12: Association Rule</li>
-            </ul>
-        </section>
-        <h2>Internal Solutions & end Sem of Data Science</h2>
-        <ul>
-            <li>Internal I Solution</li>
-            <li>Internal II Solution</li>
-            <li>End Semester Solution</li>
+    <!-- Navbar (Same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="assignments.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="internalsol.html">Internal Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="endsem.html">End Sem</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Assignments Section -->
+    <div class="container mt-5">
+        <h2>Assignments</h2>
+        <p>Here are my assignments categorized into different sections.</p>
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="resources.html">Resource</a>
+            </li>
+            <li class="list-group-item">
+                <a href="internalsol.html">Internal Solution</a>
+            </li>
+            <li class="list-group-item">
+                <a href="endsem.html">End Sem</a>
+            </li>
         </ul>
-        <section>
-            <h2>Resources</h2>
-            <ul id="video-list">
-                <!-- YouTube lectures will be dynamically added here -->
-            </ul>
-        </section>
+    </div>
 
-        <section>
-            <h2>Internal Solutions</h2>
-            <ul id="solution-list">
-                <!-- Internal solutions will be dynamically added here -->
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024. All rights reserved.</p>
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio | All rights reserved</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
