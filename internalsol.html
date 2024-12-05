@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Solutions - Data Science 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="assignments.html">Assignments</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="solution-section" class="list-section">
+            <h2>Internal Solutions</h2>
+            <ul id="solution-list">
+                <!-- Internal solutions will be dynamically added here -->
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const solutionData = [
+            { title: "Internal I Solution", link: "https://youtu.be/9Zth3lvebXA" },
+            { title: "Internal II Solution", link: "https://youtu.be/952MsUt5JY4" },
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const solutionList = document.getElementById("solution-list");
+            solutionData.forEach(solution => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a href="${solution.link}" target="_blank">${solution.title}</a>`;
+                solutionList.appendChild(listItem);
+            });
+        });
+    </script>
+</body>
+</html>
