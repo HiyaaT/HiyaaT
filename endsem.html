@@ -3,42 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internal Solutions - Data Science 2024</title>
+    <title>End Semester Solutions - Data Science 2024</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="assignments.html">Assignments</a>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hiyaa Thaker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assignments.html">Assignments</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <main class="container">
-        <div id="solution-section" class="list-section">
-            <h2>Endsemester Solutions</h2>
-            <ul id="solution-list">
-                <!-- Internal solutions will be dynamically added here -->
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <h1>End Semester Solutions</h1>
+        <div id="solution-section" class="list-section mt-4">
+            <h2>Solutions</h2>
+            <ul id="solution-list" class="list-unstyled">
+                <!-- End semester solutions will be dynamically added here -->
             </ul>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Hiyaa Thaker. All rights reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS (Required for Navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- End Semester Solutions JavaScript -->
     <script>
         const solutionData = [
-        { title: "End Semester solution", link: "https://youtu.be/Me_RmhGVEzY", date: "2024-12-05"}
+            { title: "End Semester Solution", link: "https://youtu.be/Me_RmhGVEzY", date: "2024-12-05" }
         ];
 
         document.addEventListener("DOMContentLoaded", () => {
             const solutionList = document.getElementById("solution-list");
             solutionData.forEach(solution => {
                 const listItem = document.createElement("li");
+                listItem.classList.add("media", "mb-4");
                 listItem.innerHTML = `
-                    <a href="${solution.link}" target="_blank">${solution.title}</a>
-                    <span> - ${solution.date}</span>
+                    <i class="fab fa-youtube fa-3x me-3 text-danger"></i>
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">${solution.title}</h5>
+                        <p>Published on: <strong>${solution.date}</strong></p>
+                        <a href="${solution.link}" target="_blank" class="btn btn-outline-danger">Watch Now</a>
+                    </div>
                 `;
                 solutionList.appendChild(listItem);
             });
