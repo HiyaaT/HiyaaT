@@ -16,6 +16,7 @@ const videoData = [
 const solutionData = [
     { title: "Internal I Solution", link: "https://youtu.be/9Zth3lvebXA" },
     { title: "Internal II Solution", link: "https://youtu.be/952MsUt5JY4" },
+    { title: "End Semester solution", link: "https://youtu.be/Me_RmhGVEzY"}
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
