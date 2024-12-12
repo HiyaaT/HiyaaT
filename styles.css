@@ -272,3 +272,16 @@ footer {
     width: 100%;
     font-size: 0.9rem;
 }
+/* For larger screens (PC) */
+@media (min-width: 768px) {
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* Adds space between the items */
+    }
+
+    .contact-details .col-md-4 {
+        flex: 1;
+        max-width: 300px;
+    }
+}
